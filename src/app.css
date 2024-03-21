@@ -1,0 +1,760 @@
+/* styles.css */
+
+/* Common styles for all paths */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* min-height: 100vh; */
+  font-family:'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* display: flex; */
+  background-color: #efefef;
+  color: #3c6157;
+}
+
+/* #root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  */
+
+.App {
+  width: 100%;
+  min-height: 100vh; 
+  /* height: 100vh;  */
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px 15px gray;
+  background: linear-gradient(135deg, #eeecef, #3c6157);
+
+  /* border: 1px solid #333; */
+  /* box-shadow: 0px 0px 15px gray; */
+}
+
+/* Add more common styles as needed */
+
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  /* color: #666; */
+}
+
+.home p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjusted to display three features in a row */
+  gap: 20px;
+}
+
+.feature {
+  background-color: #a5bdaf;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.feature h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.feature p {
+  font-size: 20px;
+  /* color: #666; */
+}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    color: #247044;
+    border-radius: 10px; /* Rounded corners for the header */
+  }
+  
+  .header p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+    text-align: center; /* Center align text */
+    flex-grow: 1; /* Take up remaining space */
+  }
+  
+  .header button {
+    background-color: #5b886e;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 8px 16px; /* Adjust padding for better appearance */
+  }
+  
+  /* Style for login button at the right corner */
+  .header button.login-btn {
+    margin-left: auto;
+  }
+  .Nav {
+    background-color: #333; /* Background color for the navigation bar */
+    padding: 15px 30px; /* Padding around the navigation items */
+  }
+  
+  .Nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .Nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Spacing between list items */
+  }
+  
+  .Nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  
+  .Nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+    font-size: 16px; /* Font size for links */
+  }
+  
+  .Nav ul li a:hover {
+    color: #d1655c; /* Text color for links on hover */
+  }
+  .Footer {
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Align at the bottom of the viewport */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 0px 10px; /* Adjusted padding */
+    text-align: center; /* Center-align text */
+  }
+  
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .register h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+  
+  .register form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    padding: 20px ;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register .form-left,
+  .register .form-right {
+    flex: 1;
+    padding: 10px 20px;
+  }
+  
+  .register label {
+    font-weight: bold;
+  }
+  
+  .register input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .register .text-danger {
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  .register button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .login h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+   
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login label {
+    font-weight: bold;
+  }
+  
+  .login input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  .login .text-danger {
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  .login button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+  }
+  .nutrition {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+  }
+
+  .nutrition p {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight:bold;
+    color: rgb(111, 145, 122);
+   
+  }
+  
+  .nutrition h1 {
+    margin-bottom: 5px;
+    cursor: pointer;
+    /* color: rgb(54, 52, 52); */
+    /* font-size: 50px; */
+   
+  }
+  
+  .nutrition h2 {
+    margin-bottom: 10px;
+    
+    /* color: rgb(54, 52, 52); */
+  }
+  
+  .nutrition table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .nutrition th,
+  .nutrition td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .nutrition td {
+    background-color: #8c9a91;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .nutrition tbody tr:nth-child(even) td {
+    background-color: #c0cabe; /* Change to whatever color you prefer */
+  }
+  .nutrition th {
+    background-color: #6e6b6b;
+    color: #fff;
+  }
+  
+  /* Style for inner colors of the boxes */
+  .nutrition h1 span {
+    display: inline-block;
+    border: #007bff;
+    padding: 5px 10px;
+    /* background-color: #007bff; */
+    /* color: rgb(54, 52, 52); */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nutrition h1 span:hover {
+    background-color: #98afa9; /* Adjust hover color as needed */
+    background-color: #6e6b6b;
+    
+    /* color: #3c6157; */
+  }
+  /* styles.css (or any other CSS file you are using) */
+
+/* FitnessChart.css */
+
+.fitness {
+  display: grid;
+  /* align-items: center;
+  justify-content: center; */
+  /* max-width: 900px;
+  width: 100%; */
+  padding-bottom: 100px;
+  padding: 5px 5px 5px 5px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* padding-left: 100px; */
+  /* margin-left: 250px; */
+  
+}
+
+/* .fitness-container {
+  max-width: 600px;
+  width: 100%;
+} */
+
+/* .fitness-header {
+  text-align: center;
+} */
+
+.fitness-header h1 {
+  font-size: 60px;
+    font-weight:bold;
+    color: rgb(111, 145, 122);
+  margin-bottom: 10px;
+}
+
+.fitness-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* .fitness-list {
+  text-align: center;
+} */
+
+.fitness-list li {
+  font-size: 20px;
+  margin-bottom: 5px;
+ 
+}
+
+.fitness-select {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fitness-select label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-right: 10px;
+}
+
+.fitness-select select {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color:#3c6157;
+}
+
+
+/* ListItem.css */
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 2px solid #3c6157; 
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+.listItem > div {
+  width: 48%;
+  padding: 20px; /* Add padding for spacing inside the div */
+}
+
+.workoutList {
+  border-right: 2px solid #3c6157; /* Add right border for separation */
+}
+
+.postWorkoutList {
+  padding-left: 20px; /* Add padding to the left of the post workout list */
+}
+
+.listItem h1 {
+  color: #fff; /* Change text color */
+  font-size: 25px;
+  background: #3c6157;
+  padding: 10px; /* Add padding for spacing */
+  margin-bottom: 10px;
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.listItem ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem li {
+  color: #7d1111;
+  margin: 5px 0;
+  padding-bottom: 5px;
+}
+
+
+.bmiNotes {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  padding-bottom: 100px;
+  /* width: 100%; */
+  /* max-width: 1000px; */
+}
+
+.bmiCalcultor {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: #8aa392;
+  padding: 20px;
+  border-radius: 8px;
+  padding-left: 100px;
+  box-shadow: 0 0 10px rgba(158, 30, 30, 0.1);
+}
+
+.bmi h1{
+  color: #333;
+  font-weight: 400px;
+  font-size: 400%;
+  margin-top: 2%;
+}
+
+.bmi p{
+  color: #333;
+  font-weight: 400px;
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+
+.bmiCalcultor h2 {
+  color: #333;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.bmiCalcultor form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmiCalcultor label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bmiCalcultor input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.bmiCalcultor button {
+  background-color: #5b886e;
+  color: #fff;
+  padding: 10px;
+  width: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.bmiFeedback {
+  margin-top: 20px;
+}
+
+.bmiFeedback h1 {
+  color: #333;
+}
+
+.bmiFeedback p {
+  color: #555;
+}
+.notesClock {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+/* Notes.css */
+
+.noted {
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.noted h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #3c6157; /* Dark green color */
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.noted label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  
+}
+
+.noted input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.noted button {
+  padding: 6px 12px;
+  background-color: #3c6157;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.noted button:hover {
+  background-color: #2e4d43; /* Darker background color on hover */
+}
+
+.noted p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.noted div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.noted div button {
+  background-color: #943a30; /* Red color for delete button */
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.noted div button:hover {
+  background-color: #c0392b; /* Darker red color on hover */
+}
+
+/* Clock.css */
+
+.clock {
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.clock h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #3c6157; /* Dark green color */
+  margin-bottom: 10px;
+}
+
+.clock h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.clock button {
+  padding: 6px 12px;
+  background-color: #3c6157;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.clock button:hover {
+  background-color: #2e4d43; /* Darker background color on hover */
+}
+/* About.css */
+
+.about {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Dark text color */
+}
+
+.about a {
+  color: #3c6157; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for headings */
+.about h2 {
+  font-size: 24px;
+  color: #3c6157; /* Dark green color */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for bullet points */
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Styling for services section */
+.about h3 {
+  font-size: 20px;
+  color: #3c6157; /* Dark green color */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for button */
+.about .btn {
+  background-color: #3c6157;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+  background-color: #2e4d43; /* Darker background color on hover */
+}

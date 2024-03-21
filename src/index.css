@@ -1,0 +1,582 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-color: #efefef;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+ .App {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+  background: linear-gradient(135deg, #eeecef, #3c6157);
+}
+body {
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.header{
+  font-size: 100px;
+}
+
+.Header, .Footer { 
+  width: 100%;
+  background-color: #3a6e61;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer {
+  background-color: #3a6e61;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.Nav li {
+  padding: 1rem;
+}
+
+.Nav li:hover, 
+.Nav li:focus {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav li:hover, 
+.Nav li:focus, 
+.Nav li:hover a, 
+.Nav li:focus a  {
+  background-color: #eee;
+  color: #333;
+}
+
+.Nav li:hover a, 
+.Nav li:focus a {
+  cursor: pointer;
+}
+
+Add this to your existing CSS file or create a new one
+
+.home {
+  padding-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #777;
+}
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.bmiNotes {
+  display: grid;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bmiCalcultor {
+  background-color: #8aa392;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(158, 30, 30, 0.1);
+}
+
+.bmi h1{
+  color: #333;
+  font-weight: 400px;
+  font-size: 400%;
+  margin-top: 2%;
+}
+
+.bmi p{
+  color: #333;
+  font-weight: 400px;
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+
+.bmiCalcultor h2 {
+  color: #333;
+  margin-top: 5%;
+}
+
+.bmiCalcultor form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmiCalcultor label {
+  margin-top: 10px;
+}
+
+.bmiCalcultor input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.bmiCalcultor button {
+  background-color: #5b886e;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.bmiFeedback {
+  margin-top: 20px;
+}
+
+.bmiFeedback h1 {
+  color: #333;
+}
+
+.bmiFeedback p {
+  color: #555;
+}
+
+.notesClock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+.clock {
+
+  padding: 20px;
+  border-radius: 8px;
+  
+ 
+}
+
+.clock h2 {
+  color: #333;
+}
+
+.clock h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.clock button {
+  background-color: #5b886e;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.clock button:hover {
+  background-color: #40594b;
+}
+
+.clock button:last-child {
+  background-color: #e74c3c;
+}
+
+.clock button:last-child:hover {
+  background-color: #c0392b;
+}
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.noted {
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.noted h2 {
+  color: #333;
+}
+
+.noted label {
+  display: block;
+  margin-top: 10px;
+}
+
+.noted input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.noted button {
+  background-color: #5b886e;
+  /* color: #fff; */
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.noted button:hover {
+  background-color: #5b886e;
+}
+
+.noted > div {
+  margin-top: 15px;
+}
+
+.noted h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.noted button {
+  background-color: #5b886e;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.noted button:hover {
+  background-color: #70909e;
+}
+
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.nutrition {
+  padding: 20px;
+}
+
+.nutrition h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.nutrition h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.nutrition span {
+  color:#3a6e61;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.fitness {
+
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+
+.fitness h1 {
+  color: #333;
+  
+}
+
+.fitness h2 {
+  color: #333;
+}
+
+.fitness li {
+  color: #333;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.fitness label {
+  color: #333;
+  margin-top: 10px;
+  display: block;
+}
+
+.fitness select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fitness select option {
+  color: #333;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* box-shadow: 0 0 10px rgba(245, 0, 0, 0.1); */
+}
+
+.listItem > div {
+  width: 48%;
+}
+
+.listItem h1 {
+  color: #333;
+  font-size: 25px;
+  background:#3c6157;
+  margin-bottom: 5%;
+  
+}
+
+.listItem ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5%;
+
+}
+
+.listItem li {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+/* You may need to adjust the styling based on your design preferences. */
+
+/* You may need to adjust the styling based on your design preferences. */
+
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+
+.hero-banner-img {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  width: 700px;
+  height: 900px;
+  margin-top: -330px;
+
+}
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: static !important;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}
